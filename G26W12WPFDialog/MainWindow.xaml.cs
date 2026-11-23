@@ -11,6 +11,8 @@ public partial class MainWindow : Window
 
     public void OnAdd(object sender, RoutedEventArgs e)
     {
-
+        GundamDlg dialog = new() { Owner = this };
+        if (dialog.ShowDialog() != true)
+            return;
     }
 }
